@@ -53,12 +53,12 @@ public class PageBase {
 		{
 			
 	
-		    //File app = new File("user.dir"+"/src/main/resources/app-debug.apk");
+		    File app = new File("user.dir"+"/src/main/resources/app-debug(1).apk");
 		    DesiredCapabilities ds = new DesiredCapabilities();
 
 	       
 	    		ds.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
-	    	   // ds.setCapability("app", app.getAbsolutePath());
+	    	   ds.setCapability("app", app.getAbsolutePath());
 
 	    		ds.setCapability("platformName", "Android");
 	    		ds.setCapability("platformVersion", "10.0");
